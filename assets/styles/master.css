@@ -128,6 +128,11 @@ img {
   border-radius: 20px;
 }
 
+iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .img__wrap {
   position: relative;
 }
@@ -135,11 +140,14 @@ img {
 .img__description {
   border-radius: 20px;
   position: absolute;
-  top: 60%;
+  top: -12%;
   bottom: -11%;
   left: 0;
   right: 0;
-  background: rgba(255, 215, 0, 0.72);
+  /*background: rgba(255, 215, 0, 0.72);*/
+  border-color: rgba(255, 215, 0, 0.72);
+  border-width: 20px;
+  border-style: solid;
   color: #fff;
   visibility: hidden;
   opacity: 0;
