@@ -1,0 +1,166 @@
+html {
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B3430;
+}
+
+li {
+  float: right;
+  margin: 7% 35px 3% 0px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  /* Hover stuff */
+  position: relative;
+}
+
+/* Hover stuff */
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Futura-CondensedExtraBold', sans-serif;
+  color: #667277;
+  font-weight: lighter;
+  font-size: 2.5vw;
+  margin: 3% 5% 5% 5%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Futura-CondensedExtraBold', sans-serif;
+  color: #667277;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  margin: 3% 5% 5% 5%;
+  text-align: center;
+}
+
+.footer {
+  background-color: #3B3430;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  padding-left: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#footer-text {
+  background-color: #3B3430;
+  font-size: 1.5vw;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.grid {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  max-width: 100%;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-gap: 5px;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  border-radius: 20px;
+  position: absolute;
+  top: 60%;
+  bottom: -11%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 215, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.box {
+  padding: 10px;
+}
