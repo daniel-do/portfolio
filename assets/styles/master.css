@@ -111,39 +111,9 @@ div.sticky {
   grid-gap: 5px;
 }
 
-img, iframe {
+img, iframe, video {
   width: 100%;
   border-radius: 20px;
-}
-
-.img__wrap {
-  position: relative;
-}
-
-.img__description {
-  border-radius: 20px;
-  position: absolute;
-  top: -12%;
-  bottom: -11%;
-  left: 0;
-  right: 0;
-  border-color: rgba(255, 215, 0, 0.72);
-  border-width: 20px;
-  border-style: solid;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 3vw;
-  text-shadow: 0 0 5px black;
-  text-align: center;
-
-  /* transition effect */
-  transition: opacity .2s, visibility .2s;
-}
-
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 1;
 }
 
 @media (min-width: 600px) {
@@ -156,4 +126,75 @@ img, iframe {
 
 .box {
   padding: 10px;
+}
+
+.crabity-video-container, 
+.soundviz-video-container,
+.toddstrash-video-container,
+.interactivedesigns-video-container,
+.riddleminotaur-video-container,
+.justkeepswimming-video-container,
+.pandaclimb-video-container,
+.treeman-video-container,
+.chopsticks-video-container {
+  position: relative;
+}
+
+.crabity-video-container video, 
+.soundviz-video-container video,
+.toddstrash-video-container video,
+.interactivedesigns-video-container video,
+.riddleminotaur-video-container video,
+.justkeepswimming-video-container video,
+.pandaclimb-video-container video,
+.treeman-video-container video,
+.chopsticks-video-container video {
+  width: 100%;
+}
+ 
+.crabity-video-container .hover-text, 
+.soundviz-video-container .hover-text,
+.toddstrash-video-container .hover-text,
+.interactivedesigns-video-container .hover-text,
+.riddleminotaur-video-container .hover-text,
+.justkeepswimming-video-container .hover-text,
+.pandaclimb-video-container .hover-text,
+.treeman-video-container .hover-text,
+.chopsticks-video-container .hover-text {
+  position: absolute;
+  top: 0;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  
+  border-radius: 20px;
+  border-color: rgba(255, 215, 0, 0.72);
+  border-width: 20px;
+  border-style: solid;
+
+  color: #fff;
+  font-size: 3vw;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+
+  padding: 5% 5%;
+  pointer-events: none;
+  box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  letter-spacing: 0.8px;
+  transition: all 400ms ease;
+  text-decoration: none;
+}
+
+.crabity-video-container .hover-text.active, 
+.soundviz-video-container .hover-text.active,
+.toddstrash-video-container .hover-text.active,
+.interactivedesigns-video-container .hover-text.active,
+.riddleminotaur-video-container .hover-text.active,
+.justkeepswimming-video-container .hover-text.active,
+.pandaclimb-video-container .hover-text.active,
+.treeman-video-container .hover-text.active,
+.chopsticks-video-container .hover-text.active {
+  opacity: 1;
+  letter-spacing: 0;
 }
