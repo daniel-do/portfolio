@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #000;
 }
 
 .wrapper {
@@ -22,7 +23,7 @@ body {
 }
 
 section {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .profile {
@@ -136,7 +137,10 @@ img, iframe, video {
 .justkeepswimming-video-container,
 .pandaclimb-video-container,
 .treeman-video-container,
-.chopsticks-video-container {
+.chopsticks-video-container,
+.tbdungeon-video-container,
+.dillosjourney-video-container,
+.frostyfrenzy-video-container {
   position: relative;
 }
 
@@ -148,7 +152,10 @@ img, iframe, video {
 .justkeepswimming-video-container video,
 .pandaclimb-video-container video,
 .treeman-video-container video,
-.chopsticks-video-container video {
+.chopsticks-video-container video,
+.tbdungeon-video-container video,
+.dillosjourney-video-container video,
+.frostyfrenzy-video-container video {
   width: 100%;
 }
  
@@ -160,7 +167,10 @@ img, iframe, video {
 .justkeepswimming-video-container .hover-text,
 .pandaclimb-video-container .hover-text,
 .treeman-video-container .hover-text,
-.chopsticks-video-container .hover-text {
+.chopsticks-video-container .hover-text,
+.tbdungeon-video-container .hover-text,
+.dillosjourney-video-container .hover-text,
+.frostyfrenzy-video-container .hover-text {
   position: absolute;
   top: 0;
   bottom: 1%;
@@ -179,7 +189,7 @@ img, iframe, video {
 
   padding: 5% 5%;
   pointer-events: none;
-  box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 4px 50px -4px rgba(255, 255, 255, 0.8);
   opacity: 0;
   letter-spacing: 0.8px;
   transition: all 400ms ease;
@@ -194,7 +204,10 @@ img, iframe, video {
 .justkeepswimming-video-container .hover-text.active,
 .pandaclimb-video-container .hover-text.active,
 .treeman-video-container .hover-text.active,
-.chopsticks-video-container .hover-text.active {
+.chopsticks-video-container .hover-text.active,
+.tbdungeon-video-container .hover-text.active,
+.dillosjourney-video-container .hover-text.active,
+.frostyfrenzy-video-container .hover-text.active {
   opacity: 1;
   letter-spacing: 0;
 }

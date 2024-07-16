@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/styles/master.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>TB Dungeon</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sticky">
+        <ul>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-do/" target="_blank">Resume</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html" class="active">work</a></li>
+          <li style="float: left; margin-left: 35px; margin-top: 5%"><a href="../index.html" style="font-family: 'Futura-CondensedExtraBold', sans-serif; font-weight: lighter; font-size: 3vw; color: white; text-shadow: 0 0 5px black">Daniel Do</a></li>
+        </ul>
+      </div>  
+      <section>
+        <div id="content" style="margin-top: 5%; margin-bottom: 5%">
+          <a href="../index.html" style="color: #FFFF00"><b>Back</b></a>
+          <p style="font-size: 40px; margin-top: 5%">TB Dungeon</b>
+          <div id="text">
+            <p>TB Dungeon (or Turn-Based Dungeon) is a dungeon crawler-like game somewhat inspired by JRPGS.
+                The main character moves through WASD movement and will have to defeat enemies through
+                turn-based combat and loot items in order to complete the game. Monochromatic sprites
+                and assets are mostly used except for the main playable character that stands
+                out from the rest. Aside from the title, credits, and controls scene, the game takes place within
+                a single level. The game ends when the player successfully kills all the enemies in the
+                dungeon and a new room appears. This room leads to a boss enemy that the player must defeat for the game to end.
+                Collectibles are scattered around the map that can restore their health.</p>
+            <p>Uses Phaser 3 and Tiled.</p>
+            <p>Development, Design: Daniel Do, Em Ishida, Scott Kuwahara</p>
+            <p>Art, Sound Effects: Kenney (<a href="https://kenney.nl/" target="_blank" style="color: #6495ED"><b>kenney.nl</b></a>)</p>
+            <p>Music: White_Records (<a href="https://pixabay.com/music/video-games-8-bit-background-music-for-arcade-game-come-on-mario-164702/" target="_blank" style="color: #6495ED"><b>pixabay.com/music/video-games-8-bit-background-music-for-arcade-game-come-on-mario-164702</b></a>)</p>
+            <p>Font: Hewett Tsoi (<a href="https://www.dafont.com/alagard.font" target="_blank" style="color: #6495ED"><b>dafont.com/alagard.font</b></a>)</p>
+            <p>Made for the CMPM 120: Game Development class at UCSC, Spring 2024.</p>
+          </div>
+          <p>Play TB Dungeon <a href="https://daniel-do.github.io/TBD/" target="_blank" style="color: #FFFF00"><b>HERE</b></a>!</p>
+          <p style="font-size: 40px; margin-top: 5%">Game Features</p>
+          <div id="text">
+            <p>Use WASD to move the character</p>
+            <p>Press ‘1’ to select ‘Fire’ in combat, ‘2’ for ‘Water’, and ‘3’ for ‘Grass’</p>
+            <p>Players start with 5 health</p>
+            <p>Touch one of the potions lying around to restore 1 HP</p>
+            <p>In order to move to the boss chamber after defeating all 5 small enemies in the initial room, walk towards the right hand side and touch the staircase that appears. It will be invisible before all the enemies have been defeated.</p>
+          </div>
+          <p style="font-size: 40px; margin-top: 5%">Combat System</p>
+          <div id="text">
+            <p>We successfully implemented a combat system that functions similarly to rock-paper-scissors using the elements of fire, water, and grass. The player picks one of the three, and then the computer randomly picks one for the enemy, then calculates the outcome. A loss subtracts one from the player’s health.</p>
+          </div>
+          <p style="font-size: 40px; margin-top: 5%">Dialogue and Pop-ups</p>
+          <div id="text">
+            <p>Starting combat by interacting with an enemy creates a pop-up screen, which changes whether the player wins, loses, or ties with their opponent. We also implemented a quest bar at the bottom of the screen, which helps tell the player what they need to do to proceed with the game.</p>
+          </div>
+          <p style="font-size: 40px; margin-top: 5%">Sprite animation</p>
+          <div id="text">
+            <p>All three of our main character sprites (the player’s wizard, the pirate enemies, and the boss ghost) have animations that contain 4 frames each.</p>
+          </div>
+          <p style="font-size: 40px; margin-top: 5%">Sounds and VFX</p>
+          <div id="text">
+            <p>Background music plays throughout the main game and switches for the boss chamber. Combat has sound effects to enhance the experience. VFX were added to improve the player’s running animation.</p>
+          </div>
+          <p style="font-size: 40px; margin-top: 5%">Enemy movement and spawn</p>
+          <div id="text">
+            <p>Enemies and collectibles spawn at random locations across the map, so no two playthroughs are the same. While they don’t move particularly far, the enemies move randomly within a small radius around themselves. Touching an enemy initiates combat.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

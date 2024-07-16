@@ -7,6 +7,9 @@ const justkeepswimming = document.querySelector(".justkeepswimming-video-contain
 const pandaclimb = document.querySelector(".pandaclimb-video-container video");
 const treeman = document.querySelector(".treeman-video-container video");
 const chopsticks = document.querySelector(".chopsticks-video-container video");
+const tbdungeon = document.querySelector(".tbdungeon-video-container video");
+const dillosjourney = document.querySelector(".dillosjourney-video-container video");
+const frostyfrenzy = document.querySelector(".frostyfrenzy-video-container video");
 
 const crabityHoverText = document.querySelector(".crabity-video-container .hover-text");
 const soundvizHoverText = document.querySelector(".soundviz-video-container .hover-text");
@@ -17,6 +20,9 @@ const justkeepswimmingHoverText = document.querySelector(".justkeepswimming-vide
 const pandaclimbHoverText = document.querySelector(".pandaclimb-video-container .hover-text");
 const treemanHoverText = document.querySelector(".treeman-video-container .hover-text");
 const chopsticksHoverText = document.querySelector(".chopsticks-video-container .hover-text");
+const tbdungeonHoverText = document.querySelector(".tbdungeon-video-container .hover-text");
+const dillosjourneyHoverText = document.querySelector(".dillosjourney-video-container .hover-text");
+const frostyfrenzyHoverText = document.querySelector(".frostyfrenzy-video-container .hover-text");
 
 crabity.addEventListener("mouseenter", () => {
     crabity.play();
@@ -106,4 +112,34 @@ chopsticks.addEventListener("mouseenter", () => {
 chopsticks.addEventListener("mouseleave", () => {
     chopsticks.pause();
     chopsticksHoverText.classList.remove("active");
+});
+
+tbdungeon.addEventListener("mouseenter", () => {
+    tbdungeon.play();
+    tbdungeonHoverText.classList.add("active");
+});
+
+tbdungeon.addEventListener("mouseleave", () => {
+    tbdungeon.pause();
+    tbdungeonHoverText.classList.remove("active");
+});
+
+dillosjourney.addEventListener("mouseenter", () => {
+    dillosjourney.play();
+    dillosjourneyHoverText.classList.add("active");
+});
+
+dillosjourney.addEventListener("mouseleave", () => {
+    dillosjourney.pause();
+    dillosjourneyHoverText.classList.remove("active");
+});
+
+frostyfrenzy.addEventListener("mouseenter", () => {
+    frostyfrenzy.play();
+    frostyfrenzyHoverText.classList.add("active");
+});
+
+frostyfrenzy.addEventListener("mouseleave", () => {
+    frostyfrenzy.pause();
+    frostyfrenzyHoverText.classList.remove("active");
 });
