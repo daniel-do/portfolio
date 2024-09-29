@@ -1,0 +1,32 @@
+h1 {
+  margin: 0% 5% 5% 5%;
+  text-align: left;
+}
+
+#content {
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #fff;
+  margin-top: -3%;
+  font-size: 20px;
+}
+
+#content p {
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+#content div {
+  margin-top: 2%;
+
+  align-items: center;
+}
+
+#content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
